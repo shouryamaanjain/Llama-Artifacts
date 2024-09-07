@@ -53,9 +53,6 @@ function getSystemPrompt(shadcn: boolean) {
     - ONLY IF the user asks for a dashboard, graph or chart, the recharts library is available to be imported, e.g. \`import { LineChart, XAxis, ... } from "recharts"\` & \`<LineChart ...><XAxis dataKey="name"> ...\`. Please only use this when needed.
   `;
 
-  // Removed because it causes too many errors
-  // - The lucide-react@0.263.1 library is also available to be imported. If you need an icon, use one from lucide-react. Here's an example of importing and using one: import { Camera } from "lucide-react"\` & \`<Camera color="red" size={48} />\`
-
   if (shadcn) {
     systemPrompt += `
     There are some prestyled components available for use. Please use your best judgement to use any of these components if the app calls for one.
